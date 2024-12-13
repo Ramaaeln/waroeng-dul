@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Cart = ({ cart = [], setCart, children, addToCheckout }) => {
+const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const toggleModal = () => {
@@ -29,16 +29,7 @@ const Cart = ({ cart = [], setCart, children, addToCheckout }) => {
     setCart((prevItems) => prevItems.filter((item) => item.id !== id));
   };
 
-  // Handle sending all cart items to checkout
-  const handleCheckout = () => {
-    // Send all cart items to checkout
-    cart.forEach(item => {
-      addToCheckout(item);
-    });
-
-    // Clear the cart after checkout
-    setCart([]);
-  };
+  
 
   return (
     <>

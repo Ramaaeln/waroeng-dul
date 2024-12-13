@@ -9,24 +9,6 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
 
   const totalQty = checkout.reduce((total, item) => total + item.qty, 0);
 
-  // Fungsi untuk menambah quantity
-  const increaseQty = (id) => {
-    setCheckout((prevItems) =>
-      prevItems.map((item) =>
-        item.id === id ? { ...item, qty: item.qty + 1 } : item
-      )
-    );
-  };
-
-  // Fungsi untuk mengurangi quantity
-  const decreaseQty = (id) => {
-    setCheckout((prevItems) =>
-      prevItems.map((item) =>
-        item.id === id && item.qty > 1 ? { ...item, qty: item.qty - 1 } : item
-      )
-    );
-  };
-
   // Fungsi untuk menghapus item dari cart
   const removeItem = (id) => {
     setCheckout((prevItems) => prevItems.filter((item) => item.id !== id));
@@ -38,7 +20,6 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
         <i className="ri-notification-2-fill text-xl"></i>
         {totalQty > 0 && (
           <span className="absolute -mt-1 inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-red-600 rounded-full">
-            {totalQty}
           </span>
         )}
       </button>
@@ -85,11 +66,9 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
                       {checkout.map((item) => (
                         <div key={item.id}>
                           <ul key={item.id}>
-                        <li  className="border-b pb-1 border-bg rounded flex items-center gap-4">
+                        <li  className=" pb-1 mb-2 rounded flex items-center gap-4">
                           <div>
-                            <h3 className="text-sm text-bg">Pesan : Berhasil Silahkan tunggu...</h3>
-                            
-                            
+                            <h3 className="text-sm text-bg">Pesanan Berhasil Silahkan tunggu di ruang tunggu...</h3>
                           </div>
                           <button
                             onClick={() => removeItem(item.id)}

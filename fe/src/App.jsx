@@ -8,6 +8,15 @@ const App = () => {
   const [search, setSearch] = useState('');
   const [cart, setCart] = useState([]);
   const [checkout, setCheckout] = useState([]);
+  
+  
+  const handleCheckout = () => {
+    cart.forEach(item => {
+      addToCheckout(item);
+    });
+
+    setCart([]);
+  };
 
   const addToCart = (item) => {
     setCart((prevItems) => {
@@ -43,15 +52,29 @@ const App = () => {
 
   return (
     <div>
-      <Header setSearch={setSearch}>
+      <Header 
+      setSearch={setSearch}>
         <div className='flex gap-10'>
-          <Cart cart={cart} setCart={setCart} addToCheckout={addToCheckout} checkout={checkout}>
+          <Cart 
+          cart={cart} 
+          setCart={setCart} 
+          addToCheckout={addToCheckout} 
+          checkout={checkout}
+          handleCheckout={handleCheckout}
+          >
+          
             <i className="ri-shopping-cart-fill "></i>
           </Cart>
-              <Checkout checkout={checkout} setCheckout={setCheckout} />
+
+              <Checkout
+              checkout={checkout}
+              setCheckout={setCheckout} />
         </div>
       </Header>
-      <Card search={search} addToCart={addToCart} cart={cart} />
+      <Card 
+      search={search} 
+      addToCart={addToCart} 
+      cart={cart} />
     </div>
   );
 };
