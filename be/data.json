@@ -1,0 +1,115 @@
+[
+    {
+      "nama": "Nasi Goreng",
+      "description": "Nasi goreng dengan pilihan kepedasan sesuai selera, lengkap dengan telur, sayuran, dan bumbu spesial.",
+      "imageURL": "https://img.freepik.com/free-photo/high-angle-traditional-asian-meal-with-chopsticks_23-2148694371.jpg?t=st=1733639454~exp=1733643054~hmac=0796b31515369db8cffb36237655ffedff24ab6bb254e489dc87ccd36be2e0d7&w=1060",
+      "harga": 10000,
+      "tagmenu": "berat"
+    },
+    {
+      "nama": "Nasi Lemak",
+      "description": "Nasi lemak dengan sambal pedas, telur, dan ikan bilis, disajikan dengan santan yang kaya rasa.",
+      "imageURL": "https://img.freepik.com/premium-photo/traditional-nasi-lemak-meal_23-2149056855.jpg?w=1060",
+      "harga": 22000,
+      "tagmenu": "berat"
+    },
+    {
+      "nama": "Nasi Kucing",
+      "description": "Porsi kecil nasi dengan sambal pedas, ayam suwir, dan ikan teri, cocok untuk camilan ringan.",
+      "imageURL": "https://www.masakapahariini.com/wp-content/uploads/2021/09/Nasi-Kucing.jpg",
+      "harga": 12000,
+      "tagmenu": "ringan"
+    },
+    {
+      "nama": "Es Dawet",
+      "description": "Es dawet dengan rasa manis alami dan santan yang lembut, pas untuk menyegarkan dahaga.",
+      "imageURL": "https://img.freepik.com/free-photo/lychee-jelly-seasonal-fruit-beautifully-decorated-thai-dessert-concept_1150-23501.jpg?t=st=1733730399~exp=1733733999~hmac=2daf3288cc37a98085a5ddab5d3c1db639d34a50bed2936824d5c945c8b17912&w=1060",
+      "harga": 7000,
+      "tagmenu": "dingin"
+    },
+    {
+      "nama": "Es Kelapa",
+      "description": "Es kelapa muda dengan rasa manis alami, menyegarkan di siang hari yang panas.",
+      "imageURL": "https://img.freepik.com/free-photo/cracked-coconut-glass-bright-blue-drink-wooden-table_23-2148145399.jpg?t=st=1733805745~exp=1733809345~hmac=90a094440ad0a8b7748e3858377e812c3858ba2e2a8e4bcc18457a2f69724d30&w=1060",
+      "harga": 12000,
+      "tagmenu": "dingin"
+    },
+    {
+      "nama": "Es Teh",
+      "description": "Teh manis dingin dengan kadar kemanisan yang bisa disesuaikan, cocok untuk cuaca panas.",
+      "imageURL": "https://img.freepik.com/free-photo/iced-cola-table_1339-8468.jpg?t=st=1733806235~exp=1733809835~hmac=18a9faab4bd595d55f747c6ec5283e0e73b107780eee9e9e79e604d4cf27dddb&w=996",
+      "harga": 5000,
+      "tagmenu": "dingin"
+    },
+    {
+      "nama": "Nasi Uduk",
+      "description": "Nasi uduk lembut dengan rasa gurih dari santan, disajikan dengan ayam goreng dan sambal.",
+      "imageURL": "https://www.dapurkobe.co.id/wp-content/uploads/nasi-uduk-kobe.jpg",
+      "harga": 12000,
+      "tagmenu": "berat"
+    },
+    {
+      "nama": "Soto Ayam",
+      "description": "Soto ayam hangat dengan kuah kaldu gurih, disajikan dengan potongan ayam dan mie atau nasi.",
+      "imageURL": "https://img.freepik.com/free-photo/close-up-high-protein-soup-meal_23-2149098849.jpg?t=st=1733807117~exp=1733810717~hmac=1c3bc5281fcac63e20eb5a0106d42931e54e59f9870a9281a292f9280c96b3c7&w=1060",
+      "harga": 12000,
+      "tagmenu": "berat"
+    },
+    {
+      "nama": "Mie Ayam",
+      "description": "Mie ayam dengan kuah kaldu yang kaya rasa, disajikan dengan potongan ayam dan pangsit.",
+      "imageURL": "https://img.freepik.com/free-photo/thai-food-noodles-spicy-boil-with-pork-boil-egg_1150-27969.jpg?t=st=1733807232~exp=1733810832~hmac=faa89460ed365209f9c080c2e7e7e8ea4381be0d23a811d9fe2c5f397fef0c2d&w=1060",
+      "harga": 12000,
+      "tagmenu": "berat"
+    },
+    {
+      "nama": "Bakso",
+      "description": "Bakso dengan rasa daging sapi yang kenyal, disajikan dengan kuah kaldu dan mie atau nasi.",
+      "imageURL": "https://img.freepik.com/premium-photo/bakso-meatballs-noodles-with-soup-served-chili-sauce-indonesia-food_71919-1263.jpg?w=1380",
+      "harga": 12000,
+      "tagmenu": "berat"
+    },
+    {
+      "nama": "Roti John",
+      "description": "Roti john dengan isian telur, daging, dan saus yang gurih, cocok untuk makan siang cepat.",
+      "imageURL": "https://img.freepik.com/premium-photo/homemade-french-toast-ham-bacon-cheese-sandwich-with-egg_1339-134927.jpg?w=1060",
+      "harga": 12000,
+      "tagmenu": "berat"
+    },
+    {
+      "nama": "Martabak Manis",
+      "description": "Martabak manis dengan isian kacang dan coklat, dilapisi dengan taburan gula yang manis.",
+      "imageURL": "https://img.freepik.com/premium-photo/sweet-martabak-terang-bulan-chocolate-peanut-pancakes-white-plate_740506-1005.jpg?w=996",
+      "harga": 22000,
+      "tagmenu": "ringan"
+    },
+    {
+      "nama": "Pisang Goreng",
+      "description": "Pisang goreng renyah dengan taburan coklat leleh di atasnya, sempurna sebagai camilan manis.",
+      "imageURL": "https://img.freepik.com/premium-photo/banana-crispy-chips_1339-50716.jpg?w=1060",
+      "harga": 5000,
+      "tagmenu": "ringan"
+    },
+    {
+      "nama": "Bakwan",
+      "description": "Bakwan sayur dengan taburan bawang goreng, renyah dan gurih untuk camilan sore.",
+      "imageURL": "https://img.freepik.com/premium-photo/bakwan-sayur-bala-bala-vegetable-fritter-indonesian-snack-made-from-flour-cabbage-carrots_583400-5634.jpg?w=1060",
+      "harga": 5000,
+      "tagmenu": "ringan"
+    },
+    {
+      "nama": "Teh Hangat",
+      "description": "Teh hangat dengan rasa alami yang menenangkan, cocok untuk pagi yang sejuk.",
+      "imageURL": "https://img.freepik.com/free-photo/cup-tea-rope-mandarin-slice-marble-table-high-quality-photo_114579-35994.jpg?t=st=1733811307~exp=1733814907~hmac=6fc972980e82af109f770b7d23aa2a5ee5b42b796457aa81198a9e68c944f485&w=1060",
+      "harga": 5000,
+      "tagmenu": "hangat"
+    },
+    {
+      "nama": "Kopi Hitam",
+      "description": "Kopi hitam dengan rasa pahit yang kaya, sempurna untuk menemani pagi hari Anda.",
+      "imageURL": "https://img.freepik.com/free-photo/black-coffee-glass-slices-bread-with-seeds_23-2148623234.jpg?t=st=1733811467~exp=1733815067~hmac=8b89c17b7781563682b4b8601637e86a4796a4cf13852b75825c3ebb316a6301&w=1060",
+      "harga": 5000,
+      "tagmenu": "hangat"
+    }
+  ]
+  
