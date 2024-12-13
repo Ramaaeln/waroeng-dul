@@ -49,7 +49,7 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
           className="fixed top-0 right-0 mt-16 mr-20 z-50 justify-center justify-items-end items-center w-full h-full max-h-full"
         >
           <div className="relative p-4 w-full max-w-md max-h-full">
-            <div className="relative bg-bg rounded-lg shadow border-2 border-bg pb-2 dark:bg-white">
+            <div className="relative bg-white rounded-lg shadow border-2 border-bg pb-2 dark:bg-white">
               <div className="flex items-center justify-between border-b-2 border-b-bg p-4 md:p-5 border-b rounded-t dark:bg-bg">
                 <h3 className="text-lg font-semibold text-txt dark:text-txt">Keranjang</h3>
                 <button
@@ -76,7 +76,7 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
               </div>
 
               <div className="p-1 md:p-2 bg-white dark:bg-white">
-                <div className="text-sm font-normal text-bg dark:text-bg">
+                <div className="text-sm  font-normal text-bg dark:text-bg">
                   {cart.length === 0 ? (
                     <p>Keranjang Anda Kosong.</p>
                   ) : (
@@ -144,11 +144,11 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
                           </dd>
                         </div>
                       </dl>
-                      <div className="flex justify-center">
+                      <div className="flex justify-center ">
                         <button
                           type="button"
                           onClick={handleCheckout}
-                          className="block rounded w-full z-50 text-center bg-bg px-5 py-3 text-sm text-txt transition hover:bg-bg"
+                          className="block rounded  w-full z-50 text-center bg-bg px-5 py-3 text-sm text-txt transition hover:bg-bg"
                         >
                           Pesan
                         </button>
