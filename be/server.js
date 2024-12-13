@@ -4,7 +4,7 @@ const pool = require('./connection')
 const cors = require('cors');
 app.use(cors());
 
-app.get("/menu", async (request, response) => {
+app.get("/", async (request, response) => {
   try {
     const data = await pool.query(`SELECT * FROM menu`);
 
