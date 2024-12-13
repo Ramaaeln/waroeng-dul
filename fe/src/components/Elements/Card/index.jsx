@@ -25,7 +25,13 @@ const Card = ({ search, addToCart}) => {
     <div className="h-screen  mt-36">
       <h1 className="ml-6 mt-4 font-popins text-2xl font-bold text-bg">Menu.e dul</h1>
 
-      <div className="flex gap-4 mt-6 ml-20">
+      <div 
+      className="grid grid-cols-2 hidden w-100 mr-20 gap-2 mt-6 ml-24
+      sm:grid  sm:grid-cols-3 sm:hidden    
+      md:flex-row md:flex
+      lg:flex-row lg:flex 
+      xl:flex-row xl:flex
+      ">
         <button
           className={`py-2 px-4 rounded ${filter === 'all' ? 'bg-bg text-txt' : 'bg-gray-200'}`}
           onClick={() => setFilter('all')}
@@ -59,9 +65,11 @@ const Card = ({ search, addToCart}) => {
       </div>
 
       <div 
-      className="p-1 gap-3 grid grid-cols-5 grid-rows-1 ml-20 mr-20 mt-2 font-popins
-      sm:grid sm:grid-cols-2 md:grid-rows-1 sm:w-full
-      md:grid md:grid-cols-2 md:grid-rows-1 md:w-full
+      className="p-1 gap-3 grid grid-cols-1  ml-20 mr-20 mt-2 font-popins
+      sm:grid-cols-2
+      md:grid-cols-3
+      lg:grid-cols-4 
+      xl:grid-cols-5
       ">
         {filteredBySearch.length === 0 ? (
           <p>Tidak Ada Menu...</p>

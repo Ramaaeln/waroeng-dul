@@ -8,9 +8,19 @@ const Header = ({ setSearch,children,pesan }) => {
   };
 
   return (
-    <div className="flex bg-bg text-txt fixed w-full rounded-b-2xl z-50 top-0 justify-between p-4 content-center items-center">
+    <div className="flex bg-bg text-txt fixed w-full rounded-b-2xl z-50 top-0 justify-between p-4 content-center items-center
+    sm:mr-24
+          md:w-full
+          lg:w-full 
+          xl:w-full
+    ">
       <h1 className="text-2xl font-bold">WaroEng.e dul</h1>
-      <form className="group relative w-1/2">
+      <form className="group hidden relative w-1/2
+          sm:block
+          md:block
+          lg: block
+          xl:block
+      ">
         <svg
           width="20"
           height="20"
@@ -25,7 +35,9 @@ const Header = ({ setSearch,children,pesan }) => {
           />
         </svg>
         <input
-          className="focus:ring-2 focus:ring-btn focus:outline-none appearance-none w-full text-sm leading-6 text-bg font-popins placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm"
+          className="focus:ring-2 focus:ring-btn focus:outline-none appearance-none w-full text-sm leading-6 text-bg font-popins placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm
+          
+          "
           type="text"
           aria-label="Filter menu.e dul"
           placeholder="Filter menu.e dul ..."

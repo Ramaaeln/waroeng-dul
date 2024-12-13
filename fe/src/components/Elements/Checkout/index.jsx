@@ -26,9 +26,15 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
 
       {isModalsOpen && (
         <div
+        
           id="crypto-modal"
           tabIndex="-1"
-          className="fixed top-0 right-0 mt-16 mr-20 z-50 justify-center justify-items-end items-center w-full h-full max-h-full"
+          className="fixed top-0 right-0 mt-16 mr-10 z-50 justify-center justify-items-end items-center w-full h-full max-h-full
+          sm:mr-10
+          md:mr-8
+          lg:mr-8 
+          xl:mr-9 
+          "
         >
           <div className="relative p-4 w-full max-w-md max-h-full">
             <div className="relative bg-white rounded-lg shadow border-2 border-bg pb-2 dark:bg-white">
