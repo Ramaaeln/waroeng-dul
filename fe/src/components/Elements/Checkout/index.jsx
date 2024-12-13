@@ -9,7 +9,6 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
 
   const totalQty = checkout.reduce((total, item) => total + item.qty, 0);
 
-  // Fungsi untuk menghapus item dari cart
   const removeItem = (id) => {
     setCheckout((prevItems) => prevItems.filter((item) => item.id !== id));
   };

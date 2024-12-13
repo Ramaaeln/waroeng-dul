@@ -1,6 +1,3 @@
-import React, { useState } from 'react';
-import Cart from '../Cart';
-import Checkout from '../Checkout';
 
 const Header = ({ setSearch,children,pesan }) => {
   const handleSearchChange = (e) => {
@@ -14,12 +11,17 @@ const Header = ({ setSearch,children,pesan }) => {
           lg:w-full 
           xl:w-full
     ">
-      <h1 className="text-2xl font-bold">WaroEng.e dul</h1>
-      <form className="group hidden relative w-1/2
-          sm:block
-          md:block
-          lg: block
-          xl:block
+      <h1 className="text-lg font-bold
+      sm:text-xl 
+      md:text-2xl
+      lg:text-2xl
+      xl:text-2xl
+      ">WaroEng.e dul</h1>
+      <form className="group  relative w-1/3
+          sm:w-1/2
+          md:w-1/2
+          lg:w-1/2
+          xl:w-1/2
       ">
         <svg
           width="20"
@@ -47,12 +49,7 @@ const Header = ({ setSearch,children,pesan }) => {
       <ul className="flex gap-10 text-lg">
         <li>
           {children}
-          {/* <Cart>
-            <i className="ri-shopping-cart-line"></i>
-            </Cart> */}
-        </li>
-        <li>
-       {/* <Checkout/> */}
+         
         </li>
       </ul>
         
