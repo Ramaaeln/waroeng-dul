@@ -7,7 +7,7 @@ const Card = ({ search, addToCart}) => {
 
   useEffect(() => {
     axios
-      .get('https://candy-cute-zebu.me/menu')
+      .get('https://candy-cute-zebu.glitch.me/menu')
       .then((response) => {
         setMenu(response.data);
       })
