@@ -46,8 +46,8 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
         <div
           id="crypto-modal"
           tabIndex="-1"
-          className="fixed mr-24 ml-24 top-0 right-0 mt-16  z-50 justify-center justify-items-end items-center w-full h-full max-h-full
-          sm:mr-24
+          className="fixed mr-1 ml-24 top-0 right-0 mt-16  z-50 justify-center justify-items-end items-center w-full h-full max-h-full
+          sm:mr-24 
           md:mr-20
           lg:mr-24 
           xl:mr-24
