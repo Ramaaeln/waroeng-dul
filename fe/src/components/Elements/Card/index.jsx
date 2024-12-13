@@ -22,7 +22,7 @@ const Card = ({ search, addToCart}) => {
   );
 
   return (
-    <div className="h-screen mt-36">
+    <div className="h-screen  mt-36">
       <h1 className="ml-6 mt-4 font-popins text-2xl font-bold text-bg">Menu.e dul</h1>
 
       <div className="flex gap-4 mt-6 ml-20">
@@ -58,12 +58,19 @@ const Card = ({ search, addToCart}) => {
         </button>
       </div>
 
-      <div className="p-1 gap-3 grid grid-cols-5 grid-rows-1 ml-20 mr-20 mt-2 font-popins">
+      <div 
+      className="p-1 gap-3 grid grid-cols-5 grid-rows-1 ml-20 mr-20 mt-2 font-popins
+      sm:grid sm:grid-cols-2 md:grid-rows-1 sm:w-full
+      md:grid md:grid-cols-2 md:grid-rows-1 md:w-full
+      ">
         {filteredBySearch.length === 0 ? (
           <p>Tidak Ada Menu...</p>
         ) : (
           filteredBySearch.map((item) => (
-            <form key={item.id} className="border-2 hover:scale-105 m-2 transition-all duration-700 rounded border-bg">
+            <form key={item.id} 
+            className="border-2 hover:scale-105 m-2 transition-all duration-700 rounded border-bg
+            
+            ">
               <div className="flex flex-col h-full">
                 <img
                   src={item.imageURL}
