@@ -75,7 +75,7 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
                 </button>
               </div>
 
-              <div className="p-1 md:p-2">
+              <div className="p-1 md:p-2 bg-white dark:bg-white">
                 <div className="text-sm font-normal text-bg dark:text-bg">
                   {cart.length === 0 ? (
                     <p>Keranjang Anda Kosong.</p>
