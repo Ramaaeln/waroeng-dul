@@ -31,8 +31,8 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
           className="fixed top-0 right-0 mt-16 mr-20 z-50 justify-center justify-items-end items-center w-full h-full max-h-full"
         >
           <div className="relative p-4 w-full max-w-md max-h-full">
-            <div className="relative bg-bg rounded-lg shadow border-2 border-bg pb-2 dark:bg-white">
-              <div className="flex items-center justify-between border-b-2 border-b-bg p-4 md:p-5 border-b rounded-t dark:bg-bg">
+            <div className="relative bg-white rounded-lg shadow border-2 border-bg pb-2 dark:bg-white">
+              <div className="flex items-center justify-between border-b-2 border-b-bg p-4 md:p-5 border-b rounded-t bg-bg dark:bg-bg">
                 <h3 className="text-lg font-semibold text-txt dark:text-txt">Notifikasi</h3>
                 <button
                   type="button"
