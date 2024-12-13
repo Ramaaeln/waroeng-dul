@@ -63,7 +63,7 @@ const Card = ({ search, addToCart}) => {
           <p>Tidak Ada Menu...</p>
         ) : (
           filteredBySearch.map((item) => (
-            <form key={item.id} className="border-2 rounded border-bg">
+            <form key={item.id} className="border-2 hover:scale-105 m-2 transition-all duration-700 rounded border-bg">
               <div className="flex flex-col h-full">
                 <img
                   src={item.imageURL}
