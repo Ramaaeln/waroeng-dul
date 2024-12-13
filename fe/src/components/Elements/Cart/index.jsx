@@ -154,7 +154,6 @@ const Cart = ({ cart = [], setCart, children, addToCheckout }) => {
                         </div>
                       </dl>
                       <div className="flex justify-center">
-                        {/* Button Pesan hanya muncul sekali di bawah */}
                         <button
                           type="button"
                           onClick={handleCheckout}
