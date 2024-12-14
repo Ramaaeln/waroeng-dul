@@ -3,9 +3,10 @@ Hi...👋
 
 pada kesempatan kali ini saya membuat website full stack dengan teknologi :
 
-1. React js + vite (framework)
-2. Tailwinds (styling)
-3. Remixicon (icon)
+1. React js + vite (framework front end)
+2. Express (backend)
+3. Tailwinds (styling)
+4. Remixicon (icon)
 
 Fitur yang tersedia:
 1. Search by Nama Menu
