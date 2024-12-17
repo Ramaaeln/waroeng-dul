@@ -83,7 +83,9 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
                           <ul key={item.id}>
                         <li  className=" pb-1 mb-2 rounded flex items-center gap-4">
                           <div>
-                            <h3 className="text-sm text-bg">Pesanan Berhasil Silahkan tunggu di ruang tunggu...</h3>
+                            <h3 className="text-sm text-bg">
+                              Pesanan Berhasil Silahkan tunggu di ruang tunggu...
+                              </h3>
                           </div>
                           <button
                             onClick={() => removeItem(item.id)}
