@@ -36,8 +36,8 @@ const Header = ({ setSearch,children,pesan }) => {
           
           "
           type="text"
-          aria-label="Filter menu.e dul"
-          placeholder="Filter menu.e dul ..."
+          aria-label="Search menu.e dul"
+          placeholder="Search menu.e dul ..."
           onChange={handleSearchChange} 
         />
       </form>
