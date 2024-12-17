@@ -103,11 +103,11 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
                                     currency: 'IDR',
                                   })}
                                 </span>
-                                <div className="text-xs mr-14  w-56 text-gray-600
-                                sm:mr-14 
-                                md:mr-14
-                                lg:mr-14 
-                                xl:mr-14
+                                <div className="text-xs mr-12  w-48 text-gray-600
+                                sm:mr-14 sm:w-56
+                                md:mr-14 md:w-56
+                                lg:mr-14 lg:w-56
+                                xl:mr-14 xl:w-56
                                 ">
                                   <span>Jumlah : </span>
                                   <button
@@ -127,7 +127,12 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
                               </div>
                               <button
                                 onClick={() => removeItem(item.id)}
-                                className="text-red-500   right-0 top-0"
+                                className="text-red-500   -ml-16 right-0 top-0
+                                sm:-ml-0 
+                                md:-ml-0
+                                lg:-ml-0 
+                                xl:-ml-0 
+                                "
                               >
                                 <i className="ri-delete-bin-fill text-xl"></i>
                               </button>
