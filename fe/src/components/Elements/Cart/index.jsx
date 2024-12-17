@@ -46,11 +46,11 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
         <div
           id="crypto-modal"
           tabIndex="-1"
-          className="fixed mr-1 ml-24 top-0 right-0 mt-16  z-50 justify-center justify-items-end items-center w-full h-full max-h-full
-          sm:mr-24 
-          md:mr-20
-          lg:mr-24 
-          xl:mr-24
+          className="fixed mr-1    top-0 right-0 mt-16  z-50 justify-center justify-items-end items-center w-full h-full max-h-full
+          sm:mr-14 
+          md:mr-14
+          lg:mr-14 
+          xl:mr-16 
           "
         >
           <div className="relative p-4 w-full max-w-md max-h-full">
@@ -85,15 +85,15 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
                   {cart.length === 0 ? (
                     <p>Keranjang Anda Kosong.</p>
                   ) : (
-                    <div className="h-96 overflow-y-auto">
+                    <div className="h-96  overflow-y-auto">
                       {cart.map((item) => (
                         <div key={item.id}>
                           <ul className="scroll-smooth">
-                            <li className="border-b pb-1 border-bg rounded flex items-center gap-4">
+                            <li className="  border-b pb-1 border-bg rounded flex items-center">
                               <img
                                 src={item.imageURL}
                                 alt={item.nama}
-                                className="size-16 mt-1 rounded object-cover"
+                                className="size-16 mt-1 rounded object-cover mr-1"
                               />
                               <div>
                                 <h3 className="text-sm text-bg">{item.nama}</h3>
@@ -103,7 +103,12 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
                                     currency: 'IDR',
                                   })}
                                 </span>
-                                <div className="text-xs w-56 text-gray-600">
+                                <div className="text-xs mr-14  w-56 text-gray-600
+                                sm:mr-14 
+                                md:mr-14
+                                lg:mr-14 
+                                xl:mr-14
+                                ">
                                   <span>Jumlah : </span>
                                   <button
                                     onClick={() => decreaseQty(item.id)}
@@ -122,9 +127,9 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
                               </div>
                               <button
                                 onClick={() => removeItem(item.id)}
-                                className="text-red-500 ml-2 right-0 top-0"
+                                className="text-red-500   right-0 top-0"
                               >
-                                Hapus
+                                <i className="ri-delete-bin-fill text-xl"></i>
                               </button>
                             </li>
                           </ul>
