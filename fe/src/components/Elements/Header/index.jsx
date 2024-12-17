@@ -5,11 +5,11 @@ const Header = ({ setSearch,children,pesan }) => {
   };
 
   return (
-    <div className="flex bg-bg text-txt fixed w-full rounded-b-2xl z-50 top-0 justify-between p-4 content-center items-center
-    sm:mr-24
+    <div className="flex pr-10 bg-bg text-txt fixed w-full rounded-b-2xl z-50 top-0 justify-between p-4 content-center items-center
+          sm:mr-24
           md:w-full
           lg:w-full 
-          xl:w-full
+          xl:w-full 
     ">
       <h1 className="text-2xl font-bold">WaroEng.e dul</h1>
       <form className="group hidden relative w-1/2

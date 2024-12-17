@@ -79,7 +79,7 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
                             onClick={() => removeItem(item.id)}
                             className="text-red-500 ml-2 right-0 top-0"
                           >
-                            Hapus
+                          <i className="ri-delete-bin-fill text-xl"></i>
                           </button>
                         </li>
                         </ul>

@@ -47,10 +47,10 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
           id="crypto-modal"
           tabIndex="-1"
           className="fixed mr-1    top-0 right-0 mt-16  z-50 justify-center justify-items-end items-center w-full h-full max-h-full
-          sm:mr-14 
-          md:mr-14
-          lg:mr-14 
-          xl:mr-16 
+          sm:mr-20 
+          md:mr-20
+          lg:mr-20  
+          xl:mr-20  
           "
         >
           <div className="relative p-4 w-full max-w-md max-h-full">
