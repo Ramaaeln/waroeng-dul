@@ -36,7 +36,9 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
       <button type="button" onClick={toggleModal} className="relative">
         {children}
         {totalQty > 0 && (
-          <span className="absolute -mt-1 inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-red-600 rounded-full">
+          <span 
+          className="absolute -mt-1 inline-flex items-center justify-center 
+          w-4 h-4 text-xs font-bold text-white bg-red-600 rounded-full">
             {totalQty}
           </span>
         )}
@@ -46,21 +48,31 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
         <div
           id="crypto-modal"
           tabIndex="-1"
-          className="fixed mr-1    top-0 right-0 mt-16  z-50 justify-center justify-items-end items-center w-full h-full max-h-full
+          className="fixed mr-1 top-0 right-0 mt-16  
+          z-50 justify-center justify-items-end 
+          items-center w-full h-full max-h-full
           sm:mr-20 
           md:mr-20
           lg:mr-20  
           xl:mr-20  
           "
         >
-          <div className="relative p-4 w-full max-w-md max-h-full">
-            <div className="relative bg-white rounded-lg shadow border-2 border-bg pb-2 dark:bg-white">
-              <div className="flex items-center justify-between border-b-2 border-b-bg p-4 md:p-5 border-b rounded-t bg-bg dark:bg-bg">
-                <h3 className="text-lg font-semibold text-txt dark:text-txt">Keranjang</h3>
+          <div 
+          className="relative p-4 w-full max-w-md max-h-full">
+            <div 
+            className="relative bg-white rounded-lg shadow border-2 border-bg pb-2 dark:bg-white">
+              <div 
+              className="flex items-center justify-between border-b-2 
+              border-b-bg p-4 md:p-5 border-b rounded-t bg-bg dark:bg-bg">
+                <h3 
+                className="text-lg font-semibold text-txt dark:text-txt">
+                  Keranjang
+                  </h3>
                 <button
                   type="button"
                   onClick={toggleModal}
-                  className="text-txt bg-transparent hover:text-bg rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:text-red-500"
+                  className="text-txt bg-transparent hover:text-bg rounded-lg text-sm 
+                  h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:text-red-500"
                 >
                   <svg
                     className="w-3 h-3"
@@ -143,8 +155,10 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
                     </div>
                   )}
 
-                  <div className="mt-8 flex block z-10 justify-end border-t border-gray-100 pt-8">
-                    <div className="w-screen max-w-lg space-y-4">
+                  <div 
+                  className="mt-8 flex block z-10 justify-end border-t border-gray-100 pt-8">
+                    <div 
+                    className="w-screen max-w-lg space-y-4">
                       <dl className="space-y-0.5 text-sm text-bg">
                         <div className="flex justify-between !text-base font-medium">
                           <dt>Total</dt>
@@ -163,7 +177,8 @@ const Cart = ({ cart = [], setCart, children, addToCheckout,handleCheckout }) =>
                         <button
                           type="button"
                           onClick={handleCheckout}
-                          className="block rounded  w-full z-50 text-center bg-bg px-5 py-3 text-sm text-txt transition hover:bg-bg"
+                          className="block rounded  w-full z-50 text-center 
+                          bg-bg px-5 py-3 text-sm text-txt transition hover:bg-bg"
                         >
                           Pesan
                         </button>

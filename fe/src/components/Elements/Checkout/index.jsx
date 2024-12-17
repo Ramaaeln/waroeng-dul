@@ -18,7 +18,9 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
       <button type="button" onClick={toggleModals}>
         <i className="ri-notification-2-fill text-xl"></i>
         {totalQty > 0 && (
-          <span className="absolute -mt-1 inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-red-600 rounded-full">
+          <span 
+          className="absolute -mt-1 inline-flex items-center justify-center 
+          w-4 h-4 text-xs font-bold text-white bg-red-600 rounded-full">
           </span>
         )}
       </button>
@@ -28,7 +30,8 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
         
           id="crypto-modal"
           tabIndex="-1"
-          className="fixed top-0 right-0 mt-16 mr-1 z-50 justify-center justify-items-end items-center w-full h-full max-h-full
+          className="fixed top-0 right-0 mt-16 mr-1 z-50 justify-center 
+          justify-items-end items-center w-full h-full max-h-full
           sm:mr-10
           md:mr-8
           lg:mr-8 
@@ -36,13 +39,20 @@ const Checkout = ({ checkout = [], setCheckout,handleAddToCheckout }) => {
           "
         >
           <div className="relative p-4 w-full max-w-md max-h-full">
-            <div className="relative bg-white rounded-lg shadow border-2 border-bg pb-2 dark:bg-white">
-              <div className="flex items-center justify-between border-b-2 border-b-bg p-4 md:p-5 border-b rounded-t bg-bg dark:bg-bg">
-                <h3 className="text-lg font-semibold text-txt dark:text-txt">Notifikasi</h3>
+            <div 
+            className="relative bg-white rounded-lg shadow border-2 border-bg pb-2 dark:bg-white">
+              <div 
+              className="flex items-center justify-between border-b-2 
+              border-b-bg p-4 md:p-5 border-b rounded-t bg-bg dark:bg-bg">
+                <h3 
+                className="text-lg font-semibold text-txt dark:text-txt">
+                  Notifikasi
+                  </h3>
                 <button
                   type="button"
                   onClick={toggleModals}
-                  className="text-txt bg-transparent hover:text-bg rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:text-red-500"
+                  className="text-txt bg-transparent hover:text-bg rounded-lg 
+                  text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:text-red-500"
                 >
                   <svg
                     className="w-3 h-3"
